@@ -41,11 +41,11 @@
                 <h2>Ta kontakt med oss i dag</h2>
                 <form method="post">
                     <label for="navn">Navn:</label>
-                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn">
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" required>
 
                     <label>
                         E-post:
-                        <input type="email" name="email" placeholder="eksempel@hiof.no">
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     </label>
                     <label>
                         Emne:
@@ -53,7 +53,28 @@
                     </label>
                     <label>
                         Melding:
-                        <textarea name="melding"></textarea>
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        Nei
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        Favoritt mat
+                        <select name="fav">
+                            <option value="Pizza">Pizza</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Kebab">Kebab</option>
+                        </select>
                     </label>
                 </form>
             </section>
