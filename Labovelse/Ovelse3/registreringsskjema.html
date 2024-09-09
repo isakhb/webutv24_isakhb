@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+<body>
+    <header>
+        <h1>Øvelse 2</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="validering.html">Valideringsoppgave</a>
+                </li>
+                <li>
+                    <a href="mal.html">Mal</a>
+                </li>
+                <li>
+                    <a href="kontakt_oss.html">Kontakt oss</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Oppgave 1</h2>
+            <form method="post">
+                <label for="name">Navn:</label>
+                <input type="text" name="navn" required id="name" placeholder="Peter Peterson" pattern="[A-Za-zæøåÆØÅ ]{2,}">
+
+                <label for="email">E-Post:</label>
+                <input type="email" name="epost" required id="email" placeholder="petpet@peterson.no">
+
+                <label for="password">Passord:</label>
+                <input type="password" name="passord" required id="password" placeholder="Minst 8 tegn, 1 tall, én stor & én liten bokstav." minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                <label for="age">Alder:</label>
+                <input type="number" name="alder" required id="age" placeholder="F.eks. 38" min="18" max="99">
+
+                <label for="tlfnr">Telefonnummer:</label>
+                <input type="tel" name="telefonnummer" required id="tlfnr" placeholder="12345678" pattern="[0-9]{8,12}">
+                
+                <label>Mann
+                    <input type="radio" name="gender" required>
+                </label>
+                <label>Kvinne
+                    <input type="radio" name="gender" required>
+                </label>
+                <label>Annet
+                    <input type="radio" name="gender" required>
+                </label>
+
+                <label for="country">Land:
+                    <select name="land" required id="country">
+                        <option value="norge">Norge</option>
+                        <option value="sverige">Sverige</option>
+                        <option value="danmark">Danmark</option>
+                    </select>
+                </label>
+
+                <label>Personvern
+                    <input type="checkbox" name="personvern" required>
+                </label>
+
+                <input type="submit" value="Fortsett">
+            </form>
+
+            <article>
+                <h3>Article-tittel</h3>
+                <p>Tekst</p>
+                <a href="#">Lenke</a>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h4>Sideområde</h4>
+    </aside>
+    <footer>
+        <p>Kontakt meg på epost: <a href="mailto:isakhb@hiof.no">Epost</a></p>
+        <p>&copy; 2024 Isak</p>
+    </footer>
+</body>
+</html>
