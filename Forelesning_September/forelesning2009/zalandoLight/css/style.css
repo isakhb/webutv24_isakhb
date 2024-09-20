@@ -1,3 +1,35 @@
+html{
+    font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img{
     width: 100%;
+}
+
+.flex-space-b{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.flex-space-b{width: 100;}
+.flex-space-b form{position: relative}
+
+#main-logo{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.product-card {
+
 }
