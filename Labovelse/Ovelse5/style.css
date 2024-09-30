@@ -1,0 +1,39 @@
+header{
+    background-size: 100%;
+    color: #fff;
+    font-size: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/03/26/59/69/1000_F_326596944_m7WkrlErKIg1W2HAIzuOWUwGZ5R54v4h.jpg");
+}
+
+nav{
+    width: 100%;
+}
+
+nav.ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+main{
+    /**/
+}
+
+article{
+    box-shadow: #2f4f4f 25px;
+}
+
+footer{
+    color: #fff;
+    background-color: #2f4f4f;
+    width: 100%;
+}
