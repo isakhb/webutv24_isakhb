@@ -10,6 +10,32 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
 }
 
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+#global-header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1 / 2;
+}
+
+main{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
 img {
     width: 100%; /* Bildet tar opp 100% av containerens bredde */
     max-width: 400px; /* Setter en maksimal bredde på 400px for bilder */
