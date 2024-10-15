@@ -1,0 +1,8 @@
+@use 'slayout.scss';
+@use 'boop.scss';
+@import 'miku.scss';
+
+body{
+    background-color: $blue;
+    height: 100vh;
+}
