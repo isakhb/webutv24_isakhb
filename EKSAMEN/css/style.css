@@ -12,6 +12,11 @@ body{
     flex-direction: column;
 }
 
+header{
+    border-bottom-style: groove;
+    padding-bottom: 5px;
+}
+
 nav {
     margin-bottom: 5px;
     font-size: 14px;
@@ -114,5 +119,5 @@ footer {
 }
 
 form{
-    width: 290px;
+    width: 280px;
 }
