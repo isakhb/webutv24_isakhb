@@ -1,3 +1,6 @@
+/*Satt fast med flex-box og skulle starte med ny css uten flexbox.
+Fant feilen, som var at nav sin max-height var 32px.
+Dette gjorde at innholdet i nav og header kræsja sammen*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
