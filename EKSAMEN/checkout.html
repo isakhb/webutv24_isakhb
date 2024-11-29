@@ -12,7 +12,7 @@
         <form><input type="search" name="søkefelt">
         <button>Søk</button></form>
         <nav>
-            <a href="index.html"><img alt="Logo"></a>
+            <a href="index.html"><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
             <ul>
                 <li>
                     <a href="index.html">Hjem</a>
@@ -27,7 +27,7 @@
                     <a href="#kontaktoss">Kontakt oss</a>
                 </li>
             </ul>
-            <a href="checkout.html"><img alt="shopping-vogn ikon"></a>
+            <a href="checkout.html"><img class="ikon" src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
         </nav>
     </header>
     <main>
@@ -60,11 +60,12 @@
 
         <section>
             <h2>Levering</h2>
-            <select name="levering">Valg av levering:
-                <option value="ekspresshjem">Expresslevering hjem</option>
-                <option value="ekspressut">Ekspress pakke til utleveringssted</option>
-                <option value="standardhjem">Standard hjemmelevering</option>
-            </select>
+            <input type="radio" name="levering" required id="ekspresshjem"> 
+            <label for="ekspresshjem">Ekspresslevering hjem</label>
+            <input type="radio" name="levering" required id="ekspressut">
+            <label for="ekspressut">Ekspress pakke til utleveringssted</label>
+            <input type="radio" name="levering" required id="standardhjem">
+            <label for="standardhjem">Standard hjemlevering</label>
         </section>
 
         <section>
@@ -76,19 +77,19 @@
     </aside>
     <footer>
         <section>
-            <h2>Logo og ingress</h2>
+            <h3><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></h3>
+        </section>
+        <section id="kontaktoss">
+            <h3>Kontakt</h3>
         </section>
         <section>
-            <h2>Kontakt</h2>
-        </section>
-        <section>
-            <h2>Snarveier</h2>
+            <h3>Snarveier</h3>
             <a href="index.html#produkter">Produkter</a>
             <a href="index.html#kategorier">Kategorier</a>
             <a href="#kontaktoss">Kontakt oss</a>
         </section>
         <section>
-            <h2>Sosiale medier</h2>
+            <h3>Sosiale medier</h3>
             <a href="https://instagram.com">Instagram</a>
             <a href="https://facebook.com">Facebook</a>
             <a href="https://linkedin.com">LinkedIn</a>
