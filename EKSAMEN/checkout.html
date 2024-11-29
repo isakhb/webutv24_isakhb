@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kasse</h1>
-        <form><input type="search" name="søkefelt">
-        <button>Søk</button></form>
-        <nav>
-            <a href="index.html"><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
+    <header class="wrapper">
+        <nav class="wrapper">
+            <a href="index.html"><img id="meny-logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
             <ul>
                 <li>
                     <a href="index.html">Hjem</a>
@@ -27,12 +24,28 @@
                     <a href="#kontaktoss">Kontakt oss</a>
                 </li>
             </ul>
-            <a href="checkout.html"><img class="ikon" src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
         </nav>
+        <a href="checkout.html"><img class="ikon" src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
+        <form id="sokefelt">
+            <input type="search" name="sokefelt">
+            <button class="button">Søk</button>
+        </form>
     </header>
     <main>
-        <section>
+        <section id="produkter">
             <h2>Shoppingbagen</h2>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <p>Farge: Svart</p>
+            </article>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <p>Farge: Rosa</p>
+            </article>
         </section>
 
         <section>
@@ -70,6 +83,23 @@
 
         <section>
             <h2>Betaling</h2>
+            <form>
+                <label>Kortnummer:
+                    <input type="number" required>
+                </label>
+                <label>Utløpsdato:
+                    <input type="date" required>
+                </label>
+                <label>CVC/CVV: 
+                    <input type="number" required maxlength="3">
+                </label>
+                <button type="submit">Fullfør kjøpet</button>
+            </form>
+            <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+            <input type="radio" name="vilkar" required id="vilkarene"> 
+            <label for="vilkarene">Ja, jeg godtar vilkårene.</label>
+            <input type="radio" name="brev" required id="nyhetsbrev">
+            <label for="myhetsbrev">Ja takk! Send nyhetsbrev til meg.</label>
         </section>
     </main>
     <aside>
@@ -77,10 +107,15 @@
     </aside>
     <footer>
         <section>
-            <h3><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></h3>
+            <h3><a href="index.html"><img id="footer-logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a></h3>
+            <p id="slagord">Consectetur, adipisci velit...</p>
         </section>
         <section id="kontaktoss">
-            <h3>Kontakt</h3>
+            <h3>Kontakt Oss</h3>
+            <p>Adresse: B R A Veien, 6B, 1757 Halden</p>
+            <p>Telefon: 69 24 35 00</p>
+            <p>E-post: customersupport@artire.no</p>
+            <p>Åpningstider: Alle dager kl. 09:00 - 16:00</p>
         </section>
         <section>
             <h3>Snarveier</h3>

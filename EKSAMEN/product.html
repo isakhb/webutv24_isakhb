@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Produkt</h1>
-        <form><input type="search" name="søkefelt">
-        <button>Søk</button></form>
-        <nav>
-            <a href="index.html"><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
+    <header class="wrapper">
+        <nav class="wrapper">
+            <a href="index.html"><img id="meny-logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
             <ul>
                 <li>
                     <a href="index.html">Hjem</a>
@@ -27,36 +24,69 @@
                     <a href="#kontaktoss">Kontakt oss</a>
                 </li>
             </ul>
-            <a href="checkout.html"><img src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
         </nav>
+        <a href="checkout.html"><img class="ikon" src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
+        <form id="sokefelt">
+            <input type="search" name="sokefelt">
+            <button class="button">Søk</button>
+        </form>
     </header>
     <main>
         <p><a href="index.html">Hjem</a> / <a>Kategori</a> / <a href="product.html">Produkt</a></p>
         <section>
             <h3>Produkt-bilder</h3>
-            <img src="#" alt="Stort bilde">
-            <img src="#" alt="Liten bilde1">
-            <img src="#" alt="Liten bilde2">
-            <img src="#" alt="Liten bilde3">
+            <img id="produktimgstor" src="https://picsum.photos/500?grayscale" alt="Stort bilde av produkt">
+            <img class="produktimgliten" src="https://picsum.photos/100?grayscale" alt="Liten produktbilde">
+            <img class="produktimgliten" src="https://picsum.photos/100?grayscale" alt="Liten produktbilde">
+            <img class="produktimgliten" src="https://picsum.photos/100?grayscale" alt="Liten produktbilde">
         </section>
         <section>
-            <h2>Overskrift</h2>
+            <h2>Leather Jacker</h2>
             <article>
-                <h3><a href="index.html">Lenke til merke</a></h3>
+                <h3><a href="index.html">Jacketdiva</a></h3>
                 <p>199,-</p>
-                <p>Fargeinformasjon</p>
+                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
             </article>
         </section>
     </main>
-    <aside>
+    <aside id="produkter">
         <h4>Lignende produkter...</h4>
+        <article class="produktkort">
+            <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+            <h3>Leather Jacket</h3>
+            <p>199,-</p>
+            <a href="product.html">Mer om produkt...</a>
+        </article>
+        <article class="produktkort">
+            <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+            <h3>Leather Jacket</h3>
+            <p>199,-</p>
+            <a href="product.html">Mer om produkt...</a>
+        </article>
+        <article class="produktkort">
+            <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+            <h3>Leather Jacket</h3>
+            <p>199,-</p>
+            <a href="product.html">Mer om produkt...</a>
+        </article>
+        <article class="produktkort">
+            <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+            <h3>Leather Jacket</h3>
+            <p>199,-</p>
+            <a href="product.html">Mer om produkt...</a>
+        </article>
     </aside>
     <footer>
         <section>
-            <h3><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></h3>
+            <h3><a href="index.html"><img id="footer-logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a></h3>
+            <p id="slagord">Consectetur, adipisci velit...</p>
         </section>
         <section id="kontaktoss">
-            <h3>Kontakt</h3>
+            <h3>Kontakt Oss</h3>
+            <p>Adresse: B R A Veien, 6B, 1757 Halden</p>
+            <p>Telefon: 69 24 35 00</p>
+            <p>E-post: customersupport@artire.no</p>
+            <p>Åpningstider: Alle dager kl. 09:00 - 16:00</p>
         </section>
         <section>
             <h3>Snarveier</h3>

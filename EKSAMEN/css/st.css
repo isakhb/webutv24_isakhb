@@ -2,14 +2,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
     color: #000;
-    display: flex;
-    flex-direction: column;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 nav {
@@ -35,9 +27,8 @@ ul li a {
     text-decoration: none;
 }
 
-.button {
+button {
     background-color: #fff;
-    font-style: none;
     font-weight: 900;
     padding: 5px 10px 5px 10px;
     border-style: dotted;
@@ -60,19 +51,11 @@ footer {
     margin: 20px;
 }
 
-#produkter {
-    flex-direction: column;
-}
-
 #produkter a{
     margin-bottom: 5px;
 }
 
 .produktkort {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
 }
 
 .img-produktkort{
@@ -81,30 +64,10 @@ footer {
     margin-top: 5px;
 }
 
-.kategorikort{
-    height: 100px;
-    width: auto;
-    border-style: dashed;
-    margin: 5px 20px 5px 20px;
-}
-
-.kategorikort h3{
-    font-size: 20;
-    font-weight: 900;
-    text-align: center
-}
-
-.img-anmeldelse{
-    max-height: 1000px;
-    max-width: 1000px;
-    width: fit-content;
-    margin-top: 5px;
+#anmeldelser{
+    flex-direction: column;
 }
 
 #footer-logo {
     max-height: 32px;
-}
-
-#produktimgstor{
-    width: 100%;
 }

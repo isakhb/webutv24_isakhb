@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artire</title>
+    <title>Artire - Hjem</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Hjem</h1>
-        <form><input type="search" name="søkefelt">
-        <button>Søk</button></form>
-        <nav>
-            <a href="index.html"><img class="ikon" class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
+    <header class="wrapper">
+        <nav class="wrapper">
+            <a href="index.html"><img id="meny-logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a>
             <ul>
                 <li>
                     <a href="index.html">Hjem</a>
@@ -27,87 +24,126 @@
                     <a href="#kontaktoss">Kontakt oss</a>
                 </li>
             </ul>
-            <a href="checkout.html"><img src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
         </nav>
+        <a href="checkout.html"><img class="ikon" src="img/shopping-cart.png" alt="shopping-cart ikon"></a>
+        <form id="sokefelt">
+            <input type="search" name="sokefelt">
+            <button class="button">Søk</button>
+        </form>
     </header>
     <main>
-        <section>
-            <h2>Banner</h2>
+        <section id="banner">
+            <h2>Artire</h2>
             <article>
-                <h3>Overskrift</h3>
-                <p>Ingress</p>
-                <a href="#">Lenke</a>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                <a href="product.html" class="button">Natus</a>
             </article>
         </section>
 
         <section id="produkter">
             <h2>Populære produkter</h2>
-            <p>Her er våres produkter</p>
+            <p>De mest "trendy" og mest kjøpte klesplaggene denne måneden</p>
             <a href="product.html">Se mer...</a>
-            <article>
-                <h3>Supersko 87</h3>
-                <p>Tekst</p>
-                <a href="product.html">Lenke</a>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <a href="product.html">Mer om produkt...</a>
+            </article>
+            
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <a href="product.html">Mer om produkt...</a>
             </article>
 
-            <article>
-                <h3>Rosakjole dame</h3>
-                <p>Tekst</p>
-                <a href="product.html">Lenke</a>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <a href="product.html">Mer om produkt...</a>
             </article>
 
-            <article>
-                <h3>Diamantsmykke med hull</h3>
-                <p>Tekst</p>
-                <a href="product.html">Lenke</a>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <a href="product.html">Mer om produkt...</a>
             </article>
 
-            <article>
-                <h3>Supersko 31</h3>
-                <p>Tekst</p>
-                <a href="product.html">Lenke</a>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <a href="product.html">Mer om produkt...</a>
             </article>
 
-            <article>
-                <h3>Grå hettegenser</h3>
-                <p>Tekst</p>
-                <a href="product.html">Lenke</a>
-            </article>
-
-            <article>
-                <h3>Svart bukse</h3>
-                <p>Tekst</p>
-                <a href="product.html">Lenke</a>
+            <article class="produktkort">
+                <img class="img-produktkort" src="https://picsum.photos/100?grayscale" alt="Bilde av produkt">
+                <h3>Leather Jacket</h3>
+                <p>199,-</p>
+                <a href="product.html">Mer om produkt...</a>
             </article>
         </section>
 
         <section id="kategorier">
             <h2>Populære kategorier</h2>
-            <article>
-                <h3>Article-tittel</h3>
-                <p>Tekst</p>
-                <a href="#">Lenke</a>
+            <p>Sed quia consequuntur magn</p>
+            <article class="kategorikort">
+                <h3>Dolores eos</h3>
+            </article>
+            <article class="kategorikort">
+                <h3>Dolores eos</h3>
+            </article>
+            <article class="kategorikort">
+                <h3>Dolores eos</h3>
             </article>
         </section>
 
-        <section>
+        <section id="anmeldelser">
             <h2>Anmeldelser</h2>
             <article>
-                <h3>Article-tittel</h3>
-                <p>Tekst</p>
-                <a href="#">Lenke</a>
+                <img class="img-anmeldelse" src="https://picsum.photos/100?grayscale" alt="En kjole i bruk, som passer fint til figuren">
+                <h3>Bra pris, bra kvalitet</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <a href="checkout.html">Les videre...</a>
+            </article>
+
+            <article>
+                <img class="img-anmeldelse" src="https://picsum.photos/100?grayscale" alt="En kjole i bruk, som passer fint til figuren">
+                <h3>Vil ha pengene tilbake</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <a href="checkout.html">Les videre...</a>
+            </article>
+
+            <article>
+                <img class="img-anmeldelse" src="https://picsum.photos/100?grayscale" alt="En kjole i bruk, som passer fint til figuren">
+                <h3>Passer perfekt</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <a href="checkout.html">Les videre...</a>
+            </article>
+
+            <article>
+                <img class="img-anmeldelse" src="https://picsum.photos/100?grayscale" alt="En kjole i bruk, som passer fint til figuren">
+                <h3>Klær passer ikke</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <a href="checkout.html">Les videre...</a>
             </article>
         </section>
     </main>
-    <aside>
-        <h4>Sideområde</h4>
-    </aside>
     <footer>
         <section>
-            <h3><img class="logo" src="img/Svart-Tekst.png" alt="Artire Logo"></h3>
+            <h3><a href="index.html"><img id="footer-logo" src="img/Svart-Tekst.png" alt="Artire Logo"></a></h3>
+            <p id="slagord">Consectetur, adipisci velit...</p>
         </section>
         <section id="kontaktoss">
-            <h3>Kontakt</h3>
+            <h3>Kontakt Oss</h3>
+            <p>Adresse: B R A Veien, 6B, 1757 Halden</p>
+            <p>Telefon: 69 24 35 00</p>
+            <p>E-post: customersupport@artire.no</p>
+            <p>Åpningstider: Alle dager kl. 09:00 - 16:00</p>
         </section>
         <section>
             <h3>Snarveier</h3>
