@@ -85,13 +85,13 @@
             <h2>Betaling</h2>
             <form>
                 <label>Kortnummer:
-                    <input type="number" required>
+                    <input type="number" required maxlength="16" alt="1234 1234 1234 1234">
                 </label>
                 <label>Utløpsdato:
                     <input type="date" required>
                 </label>
                 <label>CVC/CVV: 
-                    <input type="number" required maxlength="3">
+                    <input type="number" required maxlength="3" alt="CVC/CVV">
                 </label>
                 <button type="submit">Fullfør kjøpet</button>
             </form>
